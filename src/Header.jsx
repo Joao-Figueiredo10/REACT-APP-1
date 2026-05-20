@@ -3,10 +3,13 @@ import heroImg from './assets/hero.png'
 
 function Header(){
     return(
-        <>
-          <img src={heroImg} className="base" width="170" height="179" alt="" />
-
-        </>
+        <div>
+            <logo><img src={heroImg} alt = "Hero Vite"/> </logo>
+            <nav>
+                <a href="/home">HOME</a>
+                <a href="/contactos">CONTACTOS</a>
+            </nav>
+        </div>
     )
 }
 export default Header
