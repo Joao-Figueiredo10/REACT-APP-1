@@ -6,6 +6,10 @@ import './App.css'
 
 import Mensagem from './Mensagem';
 import Alerta from './Alerta';
+import Contador from './Contador';
+import Formulario from './Formulario';
+import Tarefas from './Tarefas';
+
 
 function App() {
   return (
@@ -22,14 +26,19 @@ function App() {
         Clica-me!
       </button>
 
+      <Contador />
+
       <h1 className="text-center">Componentes e Props</h1>
       {/* Cada componente recebe props diferentes */}
       <Mensagem mytext="Bem-vindo à tua primeira aplicação React!" />
       <Mensagem mytext="Os componentes permitem reutilizar código!" />
+      <Alerta tipo ="success" texto="O meu novo alerta" />
+      <Alerta tipo ="warning" texto="O meu novo alerta" />
+      <Alerta tipo ="danger" texto="O meu novo alerta" />
 
+      
+      <Tarefas />
 
-      <Alerta texto="Alerta de aviso" />
-      <Alerta tipo="Alerta de aviso" />
     </div>
   );
 }
