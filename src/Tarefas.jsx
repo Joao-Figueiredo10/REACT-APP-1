@@ -51,9 +51,8 @@ function Tarefas() {
 
     function limparTarefas() {
         setTarefas([]);
-        setDadosSubmetidos(null);
+        setNovaTarefa(null);
     }
-
 
     return (
         <div className="mt-4 row">
@@ -85,7 +84,7 @@ function Tarefas() {
                     <button type="button" className="btn btn-outline-secondary mr-2"
                         onClick={limparFormulario}>Limpar</button>
 
-                    <button type="button" className="btn btn-outline-secondary mr-2"
+                    <button type="button" className="btn btn-outline-warning mr-2"
                         onClick={novaTarefa}>Nova Tarefa</button>
 
                     <button type="button" className="btn btn-danger"
@@ -97,7 +96,7 @@ function Tarefas() {
                 {dadosSubmetidos && (
                     <div className="card mt-4">
                         <div className="card-body">
-                            <h5 className="card-title">Dados Recebidos</h5>
+                           <h5 className="card-title">Dados Recebidos</h5>
                             <p><strong>Titulo:</strong> {dadosSubmetidos.titulo}</p>
                             <p><strong>Data:</strong> {dadosSubmetidos.data}</p>
                             <p><strong>Descricao:</strong> {dadosSubmetidos.descricao}</p>
