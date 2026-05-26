@@ -59,8 +59,8 @@ function Formulario() {
                 
                 <div className="form-group">
                     <label>Mensagem</label>
-                    <textarea className="form-control" rows="3" value={formData.mensagem} onChange={(e) =>
-                        setFormData({ ...formData, mensagem: e.target.value })}></textarea>
+                    <input className="form-control" rows="3" value={formData.mensagem} onChange={(e) =>
+                        setFormData({ ...formData, mensagem: e.target.value })}></input>
                 </div>
 
 
