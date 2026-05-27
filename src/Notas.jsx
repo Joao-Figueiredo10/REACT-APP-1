@@ -50,8 +50,8 @@ function Notas() {
         const value = e.target.value;
         if (value < 0 ) {
             setFormData({ ...formData, teste: 0 });
-        } else if (value > 100) {
-            setFormData({ ...formData, teste: 100 });
+        } else if (value > 40) {
+            setFormData({ ...formData, teste: 40 });
         } else {
             setFormData({ ...formData, teste: value });
         }
@@ -61,8 +61,8 @@ function Notas() {
         const value = e.target.value;
         if (value < 0 ) {
             setFormData({ ...formData, trabalho: 0 });
-        } else if (value > 100) {
-            setFormData({ ...formData, trabalho: 100 });
+        } else if (value > 40) {
+            setFormData({ ...formData, trabalho: 40 });
         } else {
             setFormData({ ...formData, trabalho: value });
         }
@@ -72,8 +72,8 @@ function Notas() {
         const value = e.target.value;
         if (value < 0 ) {
             setFormData({ ...formData, atitude: 0 });
-        } else if (value > 100) {
-            setFormData({ ...formData, atitude: 100 });
+        } else if (value > 20) {
+            setFormData({ ...formData, atitude: 20 });
         } else {
             setFormData({ ...formData, atitude: value });
         }
